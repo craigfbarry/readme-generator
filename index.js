@@ -4,29 +4,50 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-inquirer.prompt([
+function userPrompt(){
+    return inquirer.prompt([
         {   
             type:       "input",
-            name:       "Title",
+            name:       "title",
             message:    "Enter the title of the project"
         },
         {   
             type:       "input",
-            name:       "Description",
+            name:       "description",
             message:    "Please give a brief description of the project"
         },
         {   
             type:       "input",
-            name:       "Contents",
+            name:       "contents",
             message:    "Add a table of contents"
         },
         {
             type:       "input",
-            name:       "Installation",
+            name:       "installation",
             message:    "Provide the installation details"
         }
 
+]);
+}
 
+function generateFile(inputData){
+    return `# ${inputData.title} '\n\n' 
 
+    ${inputData.description} '\n'
+    
+    `;
+}
+async function readmeGenerator() {
+    try {
+        const inputData = await userPrompt();
+        console.log(inputData);
+        const txt = generateFile(inputData);
+        console.log(txt);
+        await writeFileAsync("readme.md", txt);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
 
-]).then(console.log(Name +" " + Title + " " + Description));
+readmeGenerator();
