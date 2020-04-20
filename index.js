@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -30,18 +31,12 @@ function userPrompt(){
 ]);
 }
 
-function generateFile(inputData){
-    return `# ${inputData.title} '\n\n' 
 
-    ${inputData.description} '\n'
-    
-    `;
-}
-async function readmeGenerator() {
+async function init() {
     try {
-        const inputData = await userPrompt();
-        console.log(inputData);
-        const txt = generateFile(inputData);
+        const data = await userPrompt();
+        console.log(data);
+        const txt = generateMarkdown(data);
         console.log(txt);
         await writeFileAsync("readme.md", txt);
     }
@@ -50,4 +45,4 @@ async function readmeGenerator() {
     }
 }
 
-readmeGenerator();
+init();
