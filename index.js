@@ -1,10 +1,13 @@
+//Declaration of all Node modules required including the created module generateMarkdown
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
+//WriteFile being set up as a promise.
 const writeFileAsync = util.promisify(fs.writeFile);
 
+//All "inquirer" prompts to be held in this function to gather user inputs
 function userPrompt(){
     return inquirer.prompt([
         {   
@@ -32,6 +35,8 @@ function userPrompt(){
 }
 
 
+
+//Asynchronous function created, as the code will need to wait for inputs and for file to be written
 async function init() {
     try {
         const data = await userPrompt();
