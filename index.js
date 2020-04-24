@@ -18,6 +18,12 @@ function userPrompt(){
         },
         {   
             type:       "input",
+            name:       "GithubURL",
+            message:    "Please enter your Github Project URL"      
+
+        },
+        {   
+            type:       "input",
             name:       "title",
             message:    "Enter the title of the project"
         },
@@ -51,9 +57,10 @@ async function init() {
     try {
         const data = await userPrompt();
         console.log(data);
-        const txt = generateMarkdown(data);
-        console.log(txt);
-        await writeFileAsync("readme.md", txt);
+        const text = generateMarkdown(data);
+        console.log(text);
+
+        await writeFileAsync("readme.md",text);
     }
     catch(err){
         console.log(err);

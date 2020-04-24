@@ -1,17 +1,17 @@
 function generateMarkdown(data) {
-    return `
-    # ${data.title} \n\n
+    return `# ${data.title} \n\n
     ${data.description}\n
-    
-    ###Table of Contents\n
-    ####Installation\n
-    ####Usage\n
+    *****
+    ->###Table of Contents<-\n
+    *****
+    ####Installation        ${data.installation}\n
+    ####Usage              ${data.usage}\n
     ####License\n
     ####Contributing\n
     ####Tests\n
     ####Technologies used\n
-    ####Author\n @${data.GithubUsername}\n
-    ####Github URL \n
+    ####Author             @${data.GithubUsername}\n
+    ####Github URL           ${data.GithubURL}\n
     ####Acknowledgements
 
     `
