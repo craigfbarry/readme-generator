@@ -12,6 +12,12 @@ function userPrompt(){
     return inquirer.prompt([
         {   
             type:       "input",
+            name:       "GithubUsername",
+            message:    "Please enter your Github username"      
+
+        },
+        {   
+            type:       "input",
             name:       "title",
             message:    "Enter the title of the project"
         },
@@ -19,18 +25,22 @@ function userPrompt(){
             type:       "input",
             name:       "description",
             message:    "Please give a brief description of the project"
-        },
-        {   
-            type:       "input",
-            name:       "contents",
-            message:    "Add a table of contents"
-        },
+        },  
         {
             type:       "input",
             name:       "installation",
             message:    "Provide the installation details"
+        },
+        {   
+            type:       "input",
+            name:       "usage",
+            message:    "Please advise the usage details"
+        },
+        {   
+            type:       "input",
+            name:       "license",
+            message:    "Please advise any license details"
         }
-
 ]);
 }
 
