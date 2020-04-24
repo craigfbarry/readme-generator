@@ -2,19 +2,29 @@
 # Readme-Generator
 
 
- Generate text files
+ generate readme
 
 *****
 ## <div align="center">Table of Contents</div>
 
+* [Installation](https://github.com/craigfbarry/readme-generator#installation)
+
+* [Usage](https://github.com/craigfbarry/readme-generator#usage)
+
+* [LIcense](https://github.com/craigfbarry/readme-generator#license)
+
+* [Contributing](https://github.com/craigfbarry/readme-generator#contributing)
+
+* [Tests](https://github.com/craigfbarry/readme-generator#tests)
+
 *****
 #### Installation
 
-        run npm install then index js
+        npm install then run index.js
 
 #### Usage
 
-        eirufieur\
+        used for github repos
 
 #### License
       
@@ -28,7 +38,7 @@
 
 #### Author              @craigfbarry
 
-#### Github URL          hfruehrfuih.com
+#### Github URL          https://github.com/craigfbarry/readme-generator
 
 #### Acknowledgements
 

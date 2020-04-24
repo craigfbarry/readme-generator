@@ -4,6 +4,11 @@ function generateMarkdown(data) {
 \n ${data.description}\n
 *****
 ## <div align="center">Table of Contents</div>\n
+* [Installation](https://github.com/craigfbarry/readme-generator#installation)\n
+* [Usage](https://github.com/craigfbarry/readme-generator#usage)\n
+* [LIcense](https://github.com/craigfbarry/readme-generator#license)\n
+* [Contributing](https://github.com/craigfbarry/readme-generator#contributing)\n
+* [Tests](https://github.com/craigfbarry/readme-generator#tests)\n
 *****
 #### Installation\n
         ${data.installation}\n
