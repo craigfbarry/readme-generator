@@ -1,9 +1,5 @@
 function generateMarkdown(data) {
-    return `# ${data.title} \n\n
-    ${data.description}\n
-    *****
-    ->###Table of Contents<-\n
-    *****
+    return `# ${data.title}\n\n ${data.description}\n*****\n###Table of Contents\n*****
     ####Installation        ${data.installation}\n
     ####Usage              ${data.usage}\n
     ####License\n

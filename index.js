@@ -59,6 +59,7 @@ async function init() {
         console.log(data);
         const text = generateMarkdown(data);
         console.log(text);
+        
 
         await writeFileAsync("readme.md",text);
     }
