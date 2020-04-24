@@ -1,25 +1,35 @@
-# PROJECT
 
- ijhweoifjsoifh;lmcnv;lxnvoierjhfroeijf
+# Readme-Generator
+
+
+ Generate text files
+
 *****
-###Table of Contents
+## <div align="center">Table of Contents</div>
+
 *****
-    ####Installation        werjf
+#### Installation
 
-    ####Usage              ifjrifj
+        run npm install then index js
 
-    ####License
+#### Usage
 
-    ####Contributing
+        eirufieur\
 
-    ####Tests
+#### License
+      
+        MIT
+ 
+#### Contributing
 
-    ####Technologies used
+#### Tests
 
-    ####Author             @fhjreuihf
+#### Technologies used
 
-    ####Github URL           ifjrijf
+#### Author              @craigfbarry
 
-    ####Acknowledgements
+#### Github URL          hfruehrfuih.com
+
+#### Acknowledgements
 
     
