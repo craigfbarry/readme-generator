@@ -43,10 +43,23 @@ function userPrompt(){
             message:    "Please advise the usage details"
         },
         {   
-            type:       "input",
+            type:       "list",
             name:       "license",
-            message:    "Please advise any license details"
+            message:    "Please advise any license details",
+            choices:    ["apache-2.0","wtfpl","mpl-2.0","mit","none"]
+        },
+        {   
+            type:       "list",
+            name:       "testing",
+            message:    "Please advise any testing details",
+            choices:    ["jest","tape"]
+        },
+        {   
+            type:       "input",
+            name:       "technologies",
+            message:    "Please enter any technologies used in the project"
         }
+
 ]);
 }
 

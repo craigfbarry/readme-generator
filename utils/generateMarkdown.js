@@ -18,7 +18,9 @@ function generateMarkdown(data) {
         ${data.license}\n 
 #### Contributing\n
 #### Tests\n
+        ${data.testing}\n
 #### Technologies used\n
+        ${data.technologies}\n
 #### Author              @${data.GithubUsername}\n
 #### Github URL          ${data.GithubURL}\n
 #### Acknowledgements
