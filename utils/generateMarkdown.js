@@ -1,6 +1,6 @@
 function generateMarkdown(data) {
     return `
-# ${data.title}\n
+# <div align="center">${data.title}</div>\n
 \n ${data.description}\n
 *****
 ## <div align="center">Table of Contents</div>\n
@@ -10,6 +10,7 @@ function generateMarkdown(data) {
 * [Contributing](https://github.com/craigfbarry/readme-generator#contributing)\n
 * [Tests](https://github.com/craigfbarry/readme-generator#tests)\n
 *****
+!["${pictureDescription}"](./assets/readme-generator.png)\n
 #### Installation\n
         ${data.installation}\n
 #### Usage\n

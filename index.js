@@ -31,7 +31,17 @@ function userPrompt(){
             type:       "input",
             name:       "description",
             message:    "Please give a brief description of the project"
-        },  
+        },
+        {
+            type:       "input",
+            name:       "pictureDescription",
+            message:    "Please add picture description"
+        },
+        {
+            type:       "input",
+            name:       "picturePath",
+            message:    "Please add the relative path to the image"
+        },      
         {
             type:       "input",
             name:       "installation",
