@@ -57,7 +57,7 @@ function userPrompt(){
             type:       "list",
             name:       "license",
             message:    "Please advise any license details.",
-            choices:    ["apache_2.0","wtfpl","mpl-2.0","mit","none"]
+            choices:    ["apache_2.0","wtfpl","mpl_2.0","mit","none"]
         },
         {   
             type:       "input",
@@ -81,8 +81,6 @@ function userPrompt(){
             name:       "acknowledgements",
             message:    "Add any acknowledgements."
         }
-
-
 ]);
 }
 
@@ -95,12 +93,12 @@ async function init() {
         const data = await userPrompt();
         //Run AXIOS query against github username
         const queryUrl = `https://api.github.com/users/${data.GithubUsername}/repos?per_page=1`;
-        axios.get(queryUrl).then(function(res){
-            const githubImageURL = res.data[0].owner.avatar_url;
-            console.log(githubImageURL);
-        });
+        let avatarURL = await axios.get(queryUrl).then(function(res){
+              return res.data[0].owner.avatar_url
 
-        const text = generateMarkdown(data);     
+          });
+        console.log("Github URL" + avatarURL);
+        const text = generateMarkdown(data,avatarURL);     
 
         await writeFileAsync("readme.md",text);
     }
