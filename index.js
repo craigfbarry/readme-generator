@@ -13,61 +13,67 @@ function userPrompt(){
         {   
             type:       "input",
             name:       "GithubUsername",
-            message:    "Please enter your Github username"      
+            message:    "Please enter your Github username."      
 
         },
         {   
             type:       "input",
             name:       "GithubURL",
-            message:    "Please enter your Github Project URL"      
+            message:    "Please enter your Github Project URL."      
 
         },
         {   
             type:       "input",
             name:       "title",
-            message:    "Enter the title of the project"
+            message:    "Enter the title of the project."
         },
         {   
             type:       "input",
             name:       "description",
-            message:    "Please give a brief description of the project"
+            message:    "Please give a brief description of the project."
         },
         {
             type:       "input",
             name:       "pictureDescription",
-            message:    "Please add picture description"
+            message:    "Please add a picture description."
         },
         {
             type:       "input",
             name:       "picturePath",
-            message:    "Please add the relative path to the image"
+            message:    "Please add the relative path to the image."
         },      
         {
             type:       "input",
             name:       "installation",
-            message:    "Provide the installation details"
+            message:    "Provide the installation details."
         },
         {   
             type:       "input",
             name:       "usage",
-            message:    "Please advise the usage details"
+            message:    "Please advise the usage details."
         },
         {   
             type:       "list",
             name:       "license",
-            message:    "Please advise any license details",
+            message:    "Please advise any license details.",
             choices:    ["apache-2.0","wtfpl","mpl-2.0","mit","none"]
         },
         {   
+            type:       "input",
+            name:       "contributors",
+            message:    "Please list any other contributors to the project."
+        },
+
+        {   
             type:       "list",
             name:       "testing",
-            message:    "Please advise any testing details",
+            message:    "Please advise any testing details.",
             choices:    ["Jest","Tape","MochaJS","Travis CI","Karma"]
         },
         {   
             type:       "input",
             name:       "technologies",
-            message:    "Please enter any technologies used in the project"
+            message:    "Please enter any technologies used in the project."
         },
         {   
             type:       "input",
