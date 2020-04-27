@@ -1,5 +1,4 @@
 function generateMarkdown(data,githubThumbnail) {
-        console.log(githubThumbnail);
     return `
 # <div align="center">${data.title}</div>\n
 \n ${data.description}\n
