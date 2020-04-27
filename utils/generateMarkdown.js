@@ -8,7 +8,7 @@ function generateMarkdown(data) {
 * [Usage](https://github.com/craigfbarry/readme-generator#usage)\n
 * [LIcense](https://github.com/craigfbarry/readme-generator#license)\n
 * [Contributing](https://github.com/craigfbarry/readme-generator#contributing)\n
-* [Tests](https://github.com/craigfbarry/readme-generator#tests)\n
+* [Tests](https://github.com/craigfbarry/readme-generator#testing-framework)\n
 * [Technologies Used](https://github.com/craigfbarry/readme-generator#technologies-used)\n
 * [Author](https://github.com/craigfbarry/readme-generator#author)\n
 * [Github URL](https://github.com/craigfbarry/readme-generator#github)\n
@@ -21,14 +21,16 @@ function generateMarkdown(data) {
         ${data.installation}\n
 #### Usage\n
 ${data.usage}\n
-#### License    :${data.license}\n
-[License Badge](https://img.shields.io/badge/Licence-${data.license}-green)\n
+#### License\n
+![License Badge](https://img.shields.io/badge/Licence-${data.license}-green)\n
 #### Contributing\n
-#### Tests\n
+${data.contributors}\n
+#### Testing framework\n
         ${data.testing}\n
 #### Technologies used\n
         ${data.technologies}\n
 #### Author\n
+<img src="https://avatars0.githubusercontent.com/u/59948059?v=4" alt="avatar" width="100" height="100">\n
 [@${data.GithubUsername}](https://github.com/${data.GithubUsername}/)\n
 #### Github URL\n
 ${data.GithubURL}\n

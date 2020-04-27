@@ -2,7 +2,7 @@
 # <div align="center">Readme Generator</div>
 
 
- Generate a markdown readme file from text inputs.
+ Generate Readme file from text inputs
 
 *****
 ## <div align="center">Table of Contents</div>
@@ -15,7 +15,7 @@
 
 * [Contributing](https://github.com/craigfbarry/readme-generator#contributing)
 
-* [Tests](https://github.com/craigfbarry/readme-generator#tests)
+* [Tests](https://github.com/craigfbarry/readme-generator#testing-framework)
 
 * [Technologies Used](https://github.com/craigfbarry/readme-generator#technologies-used)
 
@@ -28,29 +28,31 @@
 
 
 *****
-![readme generator](./assets/readme-generator.png)
+![Readme Generator](./assets/readme-generator.png)
 
 #### Installation
 
-        npm install then node index.js
+        npm install node index.js
 
 #### Usage
 
-Used to create readme files for github
+Github
 
-#### License    :wtfpl
+#### License
 
-[License Badge](https://img.shields.io/badge/Licence-wtfpl-green)
+![License Badge](https://img.shields.io/badge/Licence-apache-2.0-green)
 
 #### Contributing
 
-#### Tests
+@joeBloggs
 
-        Travis CI
+#### Testing framework
+
+        Jest
 
 #### Technologies used
 
-        node NPM
+        node npm
 
 #### Author
 

@@ -1,5 +1,6 @@
 //Declaration of all Node modules required including the created module generateMarkdown
 const inquirer = require("inquirer");
+const axios = require("axios");
 const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown.js");
@@ -56,7 +57,7 @@ function userPrompt(){
             type:       "list",
             name:       "license",
             message:    "Please advise any license details.",
-            choices:    ["apache-2.0","wtfpl","mpl-2.0","mit","none"]
+            choices:    ["apache_2.0","wtfpl","mpl-2.0","mit","none"]
         },
         {   
             type:       "input",
@@ -90,11 +91,16 @@ function userPrompt(){
 //Asynchronous function created, as the code will need to wait for inputs and for file to be written
 async function init() {
     try {
+        //Get user inputs
         const data = await userPrompt();
-        console.log(data);
-        const text = generateMarkdown(data);
-        console.log(text);
-        
+        //Run AXIOS query against github username
+        const queryUrl = `https://api.github.com/users/${data.GithubUsername}/repos?per_page=1`;
+        axios.get(queryUrl).then(function(res){
+            const githubImageURL = res.data[0].owner.avatar_url;
+            console.log(githubImageURL);
+        });
+
+        const text = generateMarkdown(data);     
 
         await writeFileAsync("readme.md",text);
     }
