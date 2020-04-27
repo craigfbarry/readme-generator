@@ -97,7 +97,6 @@ async function init() {
               return res.data[0].owner.avatar_url
 
           });
-        console.log("Github URL" + avatarURL);
         const text = generateMarkdown(data,avatarURL);     
 
         await writeFileAsync("readme.md",text);
