@@ -10,13 +10,12 @@ function generateMarkdown(data) {
 * [Contributing](https://github.com/craigfbarry/readme-generator#contributing)\n
 * [Tests](https://github.com/craigfbarry/readme-generator#tests)\n
 *****
-!["${pictureDescription}"](./assets/readme-generator.png)\n
+![${data.pictureDescription}](${data.picturePath})\n
 #### Installation\n
         ${data.installation}\n
 #### Usage\n
-        ${data.usage}\n
-#### License\n      
-        ${data.license}\n 
+${data.usage}\n
+#### License        ${data.license}\n 
 #### Contributing\n
 #### Tests\n
         ${data.testing}\n
