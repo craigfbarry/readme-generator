@@ -62,7 +62,7 @@ function userPrompt(){
             type:       "list",
             name:       "testing",
             message:    "Please advise any testing details",
-            choices:    ["jest","tape"]
+            choices:    ["Jest","Tape","MochaJS","Travis CI","Karma"]
         },
         {   
             type:       "input",

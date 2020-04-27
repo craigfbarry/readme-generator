@@ -21,16 +21,19 @@ function generateMarkdown(data) {
         ${data.installation}\n
 #### Usage\n
 ${data.usage}\n
-#### License    :${data.license}\n 
+#### License    :${data.license}\n
+[License Badge](https://img.shields.io/badge/Licence-${data.license}-green)\n
 #### Contributing\n
 #### Tests\n
         ${data.testing}\n
 #### Technologies used\n
         ${data.technologies}\n
-#### Author              @${data.GithubUsername}\n
-#### Github URL          ${data.GithubURL}\n
+#### Author\n
+[@${data.GithubUsername}](https://github.com/${data.GithubUsername}/)\n
+#### Github URL\n
+${data.GithubURL}\n
 #### Acknowledgements\n
-(${data.acknowledgements})\n
+${data.acknowledgements}\n
 
     `
     ;
