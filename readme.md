@@ -1,8 +1,8 @@
 
-# <div align="center">ReadMe Generator</div>
+# <div align="center">Readme-Generator</div>
 
 
- The program should generate a readme file for a project
+ This code should take inputs from the command line to generate a markdown readme file
 
 *****
 ## <div align="center">Table of Contents</div>
@@ -17,18 +17,28 @@
 
 * [Tests](https://github.com/craigfbarry/readme-generator#tests)
 
+* [Technologies Used](https://github.com/craigfbarry/readme-generator#technologies-used)
+
+* [Author](https://github.com/craigfbarry/readme-generator#author)
+
+* [Github URL](https://github.com/craigfbarry/readme-generator#github)
+
+* [Acknowledgements](https://github.com/craigfbarry/readme-generator#acknowledgements)
+
+
+
 *****
-![Readme Generator](./assets/readme-generator.png)
+![Readme-Generator-example](./assets/readme-generator)
 
 #### Installation
 
-        First run NPM install then run node index.js
+        First run "npm install" then "node index.js" from command line.
 
 #### Usage
 
-Github
+Used for creation of readme files to save time with Github projects
 
-#### License        wtfpl
+#### License    :mit
  
 #### Contributing
 
@@ -38,12 +48,15 @@ Github
 
 #### Technologies used
 
-        Node NPM
+        NPM Node
 
 #### Author              @craigfbarry
 
 #### Github URL          https://github.com/craigfbarry/readme-generator
 
 #### Acknowledgements
+
+        https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+
 
     

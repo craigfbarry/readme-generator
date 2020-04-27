@@ -68,7 +68,13 @@ function userPrompt(){
             type:       "input",
             name:       "technologies",
             message:    "Please enter any technologies used in the project"
+        },
+        {   
+            type:       "input",
+            name:       "acknowledgements",
+            message:    "Add any acknowledgements."
         }
+
 
 ]);
 }

@@ -9,13 +9,19 @@ function generateMarkdown(data) {
 * [LIcense](https://github.com/craigfbarry/readme-generator#license)\n
 * [Contributing](https://github.com/craigfbarry/readme-generator#contributing)\n
 * [Tests](https://github.com/craigfbarry/readme-generator#tests)\n
+* [Technologies Used](https://github.com/craigfbarry/readme-generator#technologies-used)\n
+* [Author](https://github.com/craigfbarry/readme-generator#author)\n
+* [Github URL](https://github.com/craigfbarry/readme-generator#github)\n
+* [Acknowledgements](https://github.com/craigfbarry/readme-generator#acknowledgements)\n
+
+
 *****
 ![${data.pictureDescription}](${data.picturePath})\n
 #### Installation\n
         ${data.installation}\n
 #### Usage\n
 ${data.usage}\n
-#### License        ${data.license}\n 
+#### License    :${data.license}\n 
 #### Contributing\n
 #### Tests\n
         ${data.testing}\n
@@ -23,7 +29,8 @@ ${data.usage}\n
         ${data.technologies}\n
 #### Author              @${data.GithubUsername}\n
 #### Github URL          ${data.GithubURL}\n
-#### Acknowledgements
+#### Acknowledgements\n
+(${data.acknowledgements})\n
 
     `
     ;
