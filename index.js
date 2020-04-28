@@ -93,11 +93,11 @@ async function init() {
         const data = await userPrompt();
         //Run AXIOS query against github username
         const queryUrl = `https://api.github.com/users/${data.GithubUsername}/repos?per_page=1`;
-        let avatarURL = await axios.get(queryUrl).then(function(res){
+        data.githubThumbnail = await axios.get(queryUrl).then(function(res){
               return res.data[0].owner.avatar_url
 
           });
-        const text = generateMarkdown(data,avatarURL);     
+        const text = generateMarkdown(data);     
 
         await writeFileAsync("readme.md",text);
     }

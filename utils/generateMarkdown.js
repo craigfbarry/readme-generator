@@ -1,4 +1,4 @@
-function generateMarkdown(data,githubThumbnail) {
+function generateMarkdown(data) {
     return `
 # <div align="center">${data.title}</div>\n
 \n ${data.description}\n
@@ -30,7 +30,7 @@ ${data.contributors}\n
 #### Technologies used\n
         ${data.technologies}\n
 #### Author\n
-<img src="${githubThumbnail}" alt="avatar" width="100" height="100">\n
+<img src="${data.githubThumbnail}" alt="avatar" width="100" height="100">\n
 [@${data.GithubUsername}](https://github.com/${data.GithubUsername}/)\n
 #### Github URL\n
 ${data.GithubURL}\n
