@@ -4,15 +4,15 @@ function generateMarkdown(data) {
 \n ${data.description}\n
 *****
 ## <div align="center">Table of Contents</div>\n
-* [Installation](https://github.com/craigfbarry/readme-generator#installation)\n
-* [Usage](https://github.com/craigfbarry/readme-generator#usage)\n
-* [LIcense](https://github.com/craigfbarry/readme-generator#license)\n
-* [Contributing](https://github.com/craigfbarry/readme-generator#contributing)\n
-* [Tests](https://github.com/craigfbarry/readme-generator#testing-framework)\n
-* [Technologies Used](https://github.com/craigfbarry/readme-generator#technologies-used)\n
-* [Author](https://github.com/craigfbarry/readme-generator#author)\n
-* [Github URL](https://github.com/craigfbarry/readme-generator#github)\n
-* [Acknowledgements](https://github.com/craigfbarry/readme-generator#acknowledgements)\n
+* [Installation](${data.GithubURL}#installation)\n
+* [Usage](${data.GithubURL}#usage)\n
+* [LIcense](${data.GithubURL}r#license)\n
+* [Contributing](${data.GithubURL}#contributing)\n
+* [Tests](${data.GithubURL}#testing-framework)\n
+* [Technologies Used](${data.GithubURL}#technologies-used)\n
+* [Author](${data.GithubURL}#author)\n
+* [Github URL](${data.GithubURL}#github)\n
+* [Acknowledgements](${data.GithubURL}r#acknowledgements)\n
 
 
 *****
